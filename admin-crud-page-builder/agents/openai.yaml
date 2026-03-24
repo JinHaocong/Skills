@@ -1,0 +1,7 @@
+interface:
+  display_name: "Admin CRUD Page Builder"
+  short_description: "生成后台 CRUD 页面并补齐搜索表格弹窗表单详情操作流"
+  icon_small: "./assets/admin-crud-page-builder-small.svg"
+  icon_large: "./assets/admin-crud-page-builder.png"
+  brand_color: "#22C55E"
+  default_prompt: "Use $admin-crud-page-builder to build a real admin CRUD page with search, table, dialog form, detail view, actions, and the required API and types."

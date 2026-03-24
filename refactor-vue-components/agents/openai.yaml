@@ -1,0 +1,7 @@
+interface:
+  display_name: "Refactor Vue Components"
+  short_description: "重构复杂 Vue3 业务组件并拆分 composables 与 services"
+  icon_small: "./assets/refactor-vue-components-small.svg"
+  icon_large: "./assets/refactor-vue-components.png"
+  brand_color: "#F97316"
+  default_prompt: "Use $refactor-vue-components to analyze this Vue 3 code and produce a practical refactor plan with composables, services, clearer state boundaries, and a refactored main component."

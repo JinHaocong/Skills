@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Business Delivery"
+  short_description: "用于前端日常业务需求开发、页面交付、接口对接与缺陷修复"
+  icon_small: "./assets/frontend-business-delivery-small.svg"
+  icon_large: "./assets/frontend-business-delivery.png"
+  brand_color: "#EC4899"
+  default_prompt: "Use $frontend-business-delivery to implement this frontend business requirement within the existing project conventions, including pages, forms, API wiring, states, permissions, and validation."

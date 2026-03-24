@@ -1,0 +1,7 @@
+interface:
+  display_name: "Analyze Code Logic"
+  short_description: "结构化梳理代码执行流程、核心逻辑、关键变量与依赖关系"
+  icon_small: "./assets/analyze-code-logic-small.svg"
+  icon_large: "./assets/analyze-code-logic.png"
+  brand_color: "#8B5CF6"
+  default_prompt: "Use $analyze-code-logic to analyze this code and explain its overall purpose, execution flow, core logic, key data, and dependencies."

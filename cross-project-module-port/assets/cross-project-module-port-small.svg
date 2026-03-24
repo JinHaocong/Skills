@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+  <defs>
+    <linearGradient id="cpmp-small-bg" x1="2" x2="18" y1="2" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#0284C7"/>
+    </linearGradient>
+  </defs>
+  <rect width="20" height="20" rx="5" fill="url(#cpmp-small-bg)"/>
+  <rect x="3.8" y="5" width="4.5" height="7" rx="1.2" fill="#E0F2FE"/>
+  <rect x="11.7" y="8" width="4.5" height="7" rx="1.2" fill="#E0F2FE"/>
+  <path stroke="#075985" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M8.6 8.1h2.8m0 0-1-.9m1 .9-1 .9M11.4 11.9H8.6m0 0 1-.9m-1 .9 1 .9"/>
+</svg>

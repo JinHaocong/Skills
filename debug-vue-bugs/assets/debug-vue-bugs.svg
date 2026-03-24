@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="none" viewBox="0 0 160 160">
+  <defs>
+    <linearGradient id="dvb-bg" x1="18" x2="142" y1="14" y2="146" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BFDBFE"/>
+      <stop offset=".58" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#dvb-bg)"/>
+  <circle cx="80" cy="80" r="46" fill="#EFF6FF" fill-opacity=".16" stroke="#DBEAFE" stroke-width="4"/>
+  <circle cx="80" cy="80" r="24" stroke="#DBEAFE" stroke-width="4" stroke-dasharray="4 8"/>
+  <path fill="#EFF6FF" d="M80 54c-13.062 0-23 9.588-23 21.8 0 10.557 7.429 19.176 17.2 21.252V112h11.6V97.052c9.771-2.076 17.2-10.695 17.2-21.252C103 63.588 93.062 54 80 54Z"/>
+  <path stroke="#DBEAFE" stroke-linecap="round" stroke-width="6" d="M67 48 58 39M93 48l9-9M58 70l-12-4M102 70l12-4M58 84l-12 4M102 84l12 4"/>
+  <circle cx="72" cy="75" r="4" fill="#1D4ED8"/>
+  <circle cx="88" cy="75" r="4" fill="#1D4ED8"/>
+</svg>

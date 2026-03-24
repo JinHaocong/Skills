@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+  <defs>
+    <linearGradient id="ast-small-bg" x1="2" x2="18" y1="2" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C7D2FE"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+  </defs>
+  <rect width="20" height="20" rx="5" fill="url(#ast-small-bg)"/>
+  <path stroke="#EEF2FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.8 6.2 3.2 10l1.6 3.8M15.2 6.2 16.8 10l-1.6 3.8"/>
+  <rect x="7.2" y="5.7" width="5.6" height="2.2" rx="1.1" fill="#EEF2FF"/>
+  <rect x="7.2" y="8.9" width="5.6" height="2.2" rx="1.1" fill="#EEF2FF" fill-opacity=".88"/>
+  <rect x="7.2" y="12.1" width="5.6" height="2.2" rx="1.1" fill="#EEF2FF" fill-opacity=".76"/>
+</svg>

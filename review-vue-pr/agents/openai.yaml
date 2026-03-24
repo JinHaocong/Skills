@@ -1,0 +1,7 @@
+interface:
+  display_name: "Review Vue PR"
+  short_description: "严格评审 Vue3 + TypeScript PR 并指出高风险问题"
+  icon_small: "./assets/review-vue-pr-small.svg"
+  icon_large: "./assets/review-vue-pr.png"
+  brand_color: "#EF4444"
+  default_prompt: "Use $review-vue-pr to review this Vue 3 + TypeScript code and report the highest-risk issues first with concrete fixes."

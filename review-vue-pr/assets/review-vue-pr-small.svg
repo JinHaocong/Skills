@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+  <defs>
+    <linearGradient id="rvp-small-bg" x1="2" x2="18" y1="2" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FCA5A5"/>
+      <stop offset="1" stop-color="#DC2626"/>
+    </linearGradient>
+  </defs>
+  <rect width="20" height="20" rx="5" fill="url(#rvp-small-bg)"/>
+  <path fill="#FEF2F2" d="M5 4.5a1 1 0 0 1 1-1h4.6l3.4 3.4V14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4.5Z"/>
+  <path fill="#FCA5A5" d="M10.6 3.5V7h3.4"/>
+  <path stroke="#991B1B" stroke-linecap="round" stroke-width="1.4" d="M6.7 8.1h4.5M6.7 10.4h3.2"/>
+  <circle cx="12.9" cy="12.7" r="2.2" fill="#7F1D1D" fill-opacity=".16" stroke="#7F1D1D" stroke-width="1.3"/>
+  <path stroke="#7F1D1D" stroke-linecap="round" stroke-width="1.3" d="m14.5 14.3 1.2 1.2"/>
+</svg>

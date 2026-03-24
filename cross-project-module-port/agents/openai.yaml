@@ -1,0 +1,7 @@
+interface:
+  display_name: "Cross-Project Module Port"
+  short_description: "跨项目迁移 Vue 模块并补齐路由接口状态与样式依赖"
+  icon_small: "./assets/cross-project-module-port-small.svg"
+  icon_large: "./assets/cross-project-module-port.png"
+  brand_color: "#0EA5E9"
+  default_prompt: "Use $cross-project-module-port to migrate a page or feature from one frontend project to another and identify the required router, API, store, permission, and style changes."

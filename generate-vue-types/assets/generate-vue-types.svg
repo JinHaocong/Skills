@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="none" viewBox="0 0 160 160">
+  <defs>
+    <linearGradient id="gvt-bg" x1="18" x2="142" y1="12" y2="148" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EEAD4"/>
+      <stop offset=".55" stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="gvt-card" x1="80" x2="80" y1="42" y2="122" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#ECFEFF" stop-opacity=".92"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#gvt-bg)"/>
+  <circle cx="128" cy="34" r="18" fill="#CCFBF1" fill-opacity=".4"/>
+  <circle cx="35" cy="131" r="24" fill="#0F766E" fill-opacity=".18"/>
+  <rect x="34" y="40" width="92" height="80" rx="22" fill="url(#gvt-card)"/>
+  <path stroke="#0F766E" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" d="M60 61 48 80l12 19M100 61l12 19-12 19M68 60h24M80 60v40"/>
+  <rect x="44" y="28" width="34" height="12" rx="6" fill="#CCFBF1" fill-opacity=".8"/>
+  <rect x="82" y="28" width="18" height="12" rx="6" fill="#CCFBF1" fill-opacity=".55"/>
+</svg>

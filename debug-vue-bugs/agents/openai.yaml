@@ -1,0 +1,7 @@
+interface:
+  display_name: "Debug Vue Bugs"
+  short_description: "分析 Vue3 + TypeScript 前端 bug 并定位根因给出修复代码"
+  icon_small: "./assets/debug-vue-bugs-small.svg"
+  icon_large: "./assets/debug-vue-bugs.png"
+  brand_color: "#3B82F6"
+  default_prompt: "Use $debug-vue-bugs to analyze this Vue 3 bug, identify the root cause, and provide a copyable fix with code."

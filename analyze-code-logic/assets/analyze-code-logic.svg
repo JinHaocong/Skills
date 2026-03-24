@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="none" viewBox="0 0 160 160">
+  <defs>
+    <linearGradient id="acl-bg" x1="18" x2="142" y1="14" y2="146" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDD6FE"/>
+      <stop offset=".55" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#6D28D9"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#acl-bg)"/>
+  <circle cx="126" cy="34" r="19" fill="#F5F3FF" fill-opacity=".28"/>
+  <circle cx="34" cy="126" r="22" fill="#581C87" fill-opacity=".12"/>
+  <circle cx="53" cy="55" r="14" fill="#F5F3FF"/>
+  <circle cx="107" cy="55" r="14" fill="#F5F3FF"/>
+  <circle cx="80" cy="108" r="16" fill="#F5F3FF"/>
+  <path stroke="#5B21B6" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" d="M67 55h26M80 69v23"/>
+  <rect x="41" y="41" width="24" height="24" rx="8" stroke="#5B21B6" stroke-width="4"/>
+  <rect x="95" y="41" width="24" height="24" rx="8" stroke="#5B21B6" stroke-width="4"/>
+  <rect x="66" y="94" width="28" height="28" rx="9" stroke="#5B21B6" stroke-width="4"/>
+</svg>

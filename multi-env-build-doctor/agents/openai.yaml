@@ -1,0 +1,7 @@
+interface:
+  display_name: "Multi-Env Build Doctor"
+  short_description: "排查多环境构建配置差异并定位 Vite VueCLI uni-app 问题"
+  icon_small: "./assets/multi-env-build-doctor-small.svg"
+  icon_large: "./assets/multi-env-build-doctor.png"
+  brand_color: "#F59E0B"
+  default_prompt: "Use $multi-env-build-doctor to diagnose this multi-environment build issue across dev, test, pre, and prod and explain the likely config mismatch and fix."

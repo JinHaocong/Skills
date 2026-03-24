@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+  <defs>
+    <linearGradient id="acl-small-bg" x1="2" x2="18" y1="2" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C4B5FD"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect width="20" height="20" rx="5" fill="url(#acl-small-bg)"/>
+  <circle cx="6" cy="6" r="1.7" fill="#F5F3FF"/>
+  <circle cx="14" cy="6" r="1.7" fill="#F5F3FF"/>
+  <circle cx="10" cy="13.5" r="1.7" fill="#F5F3FF"/>
+  <path stroke="#EDE9FE" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M7.5 6h5M10 7.7v4.1"/>
+</svg>

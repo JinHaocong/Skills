@@ -1,0 +1,7 @@
+interface:
+  display_name: "Generate Vue Types"
+  short_description: "根据接口返回数据或 JSON 示例生成 Vue3 TypeScript 类型定义"
+  icon_small: "./assets/generate-vue-types-small.svg"
+  icon_large: "./assets/generate-vue-types.png"
+  brand_color: "#14B8A6"
+  default_prompt: "Use $generate-vue-types to convert this API response or JSON sample into Vue 3 friendly TypeScript types."

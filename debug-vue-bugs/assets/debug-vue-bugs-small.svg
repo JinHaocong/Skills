@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+  <defs>
+    <linearGradient id="dvb-small-bg" x1="2" x2="18" y1="2" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#93C5FD"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+  <rect width="20" height="20" rx="5" fill="url(#dvb-small-bg)"/>
+  <path fill="#EFF6FF" d="M10 6.3c-2.01 0-3.6 1.46-3.6 3.3 0 1.68 1.3 3.06 3.02 3.27v1.33h1.16V12.9c1.72-.2 3.02-1.59 3.02-3.27 0-1.84-1.59-3.3-3.6-3.3Z"/>
+  <path stroke="#DBEAFE" stroke-linecap="round" stroke-width="1.2" d="M8 5.1 6.8 4M12 5.1 13.2 4M6.5 8.3 5 7.8M13.5 8.3l1.5-.5M6.5 11.2 5 11.7M13.5 11.2l1.5.5"/>
+  <circle cx="8.7" cy="9.4" r=".8" fill="#1D4ED8"/>
+  <circle cx="11.3" cy="9.4" r=".8" fill="#1D4ED8"/>
+</svg>

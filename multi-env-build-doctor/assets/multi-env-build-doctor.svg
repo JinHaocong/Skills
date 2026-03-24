@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="none" viewBox="0 0 160 160">
+  <defs>
+    <linearGradient id="mebd-bg" x1="18" x2="142" y1="14" y2="146" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDE68A"/>
+      <stop offset=".56" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#B45309"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#mebd-bg)"/>
+  <circle cx="42" cy="80" r="14" fill="#FEF3C7"/>
+  <circle cx="118" cy="52" r="14" fill="#FEF3C7"/>
+  <circle cx="118" cy="108" r="14" fill="#FEF3C7"/>
+  <path stroke="#92400E" stroke-linecap="round" stroke-width="8" d="M56 80h27M95 61l12-7M95 99l12 7"/>
+  <path stroke="#78350F" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" d="m72 67 8-8a8.485 8.485 0 1 1 12 12l-8 8 12 12-7 7-12-12-8 8a8.485 8.485 0 1 1-12-12l8-8-8-8 7-7 8 8Z"/>
+  <circle cx="130" cy="34" r="18" fill="#FEF3C7" fill-opacity=".22"/>
+</svg>
