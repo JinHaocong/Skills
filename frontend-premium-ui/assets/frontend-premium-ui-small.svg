@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+  <defs>
+    <linearGradient id="fpui-small-bg" x1="2" x2="18" y1="2" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CBD5E1"/>
+      <stop offset=".58" stop-color="#64748B"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+  <rect width="20" height="20" rx="5" fill="url(#fpui-small-bg)"/>
+  <rect x="3.7" y="4.2" width="12.6" height="10.8" rx="2" fill="#F8FAFC" fill-opacity=".96"/>
+  <rect x="5.1" y="5.7" width="3.4" height=".9" rx=".45" fill="#94A3B8"/>
+  <rect x="5.1" y="8" width="6.6" height="1.2" rx=".6" fill="#334155"/>
+  <rect x="5.1" y="10.2" width="4.3" height="1" rx=".5" fill="#94A3B8"/>
+  <rect x="12.3" y="7.9" width="2.5" height="5" rx=".9" fill="#6366F1"/>
+</svg>

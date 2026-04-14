@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Premium UI"
+  short_description: "生成高级克制现代且可落地的前端产品级 UI 设计与代码"
+  icon_small: "./assets/frontend-premium-ui-small.svg"
+  icon_large: "./assets/frontend-premium-ui.png"
+  brand_color: "#64748B"
+  default_prompt: "Use $frontend-premium-ui to design and implement a premium, restrained, product-grade frontend UI with a clear visual system and complete runnable code."
