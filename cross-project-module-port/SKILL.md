@@ -29,6 +29,14 @@ Preserve business behavior while adapting to the target project's conventions.
 7. Verify the migration.
    Search for broken imports, missing dependencies, unregistered routes, absent stores, mismatched types, and environment assumptions.
 
+## Agentic Migration Strategy
+
+- The main agent owns the migration map, target-project adaptation, conflict resolution, and final verification.
+- For large ports, split the work into source inventory, target convention audit, API/types adaptation, state migration, page/component migration, and route/permission integration.
+- Use subagents only when the user or runtime policy explicitly allows it. Assign read-only inventory tasks or disjoint write scopes such as API/types versus UI components.
+- Never let delegated work blindly copy source-project conventions into the target project. Every returned patch must be reviewed against target conventions.
+- Keep dependency order explicit: shared constants and utilities first, then API/types, then state, then UI, then router/permissions, then verification.
+
 ## Output Contract
 
 Return the migration result in this order:

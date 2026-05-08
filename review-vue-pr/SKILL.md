@@ -36,6 +36,14 @@ Keep the feedback direct, evidence-based, and actionable.
    Check unnecessary reactive state, repeated computation, over-watching, large setup blocks, coupled concerns, and extension cost.
 7. Return findings in the required output format.
 
+## Agentic Review Strategy
+
+- The main agent owns the final review judgment, severity ordering, and wording.
+- Use subagents only when the user or runtime policy explicitly allows it, especially for independent review surfaces such as reactivity, async flow, API contracts, or type design.
+- Ask delegated reviewers for evidence-backed findings with file and line references, not broad advice.
+- Merge duplicate findings, discard unsupported claims, and keep the final review focused on behavior risk, data correctness, maintainability, and missing tests.
+- Do not let parallel review turn style preferences into high-severity issues.
+
 ## Vue 3 Review Heuristics
 
 ### Composition API

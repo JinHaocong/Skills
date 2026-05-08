@@ -1,0 +1,5 @@
+interface:
+  display_name: "Style Vault"
+  short_description: "按个人风格资产库读取 tokens 并生成对齐风格的前端代码"
+  brand_color: "#0F766E"
+  default_prompt: "Use $style-vault to apply a style asset id from the personal style vault, read its refs and tokens, and generate frontend code that follows the selected visual system."

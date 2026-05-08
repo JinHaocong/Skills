@@ -24,6 +24,14 @@ Use the provided code, error messages, stack traces, and symptoms to narrow the 
 5. Add prevention advice.
    Suggest a practical habit, pattern, or guard to avoid the same class of bug.
 
+## Agentic Diagnosis
+
+- The main agent owns the reproduction reasoning, root-cause decision, fix, and verification path.
+- For ambiguous or high-risk bugs, use subagents only when the user or runtime policy explicitly allows it; ask them for independent hypotheses tied to specific code evidence.
+- Useful delegated checks include async race inspection, reactivity/lifecycle review, type-contract review, or comparing a similar working component.
+- Do not merge speculative diagnoses. Prefer one evidence-backed root cause over many weak possibilities.
+- If a delegated fix is used, the main agent must still ensure it is the smallest behavior-preserving change and fits the project conventions.
+
 ## Inputs To Use
 
 - Runtime errors and console warnings
