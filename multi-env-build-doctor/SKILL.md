@@ -31,7 +31,8 @@ Use the project's scripts and config files to explain why one environment works 
 
 - The main agent owns the final causal chain from script or env input to runtime behavior.
 - For multi-environment incidents, first choose one working environment and one failing environment to compare.
-- User preference: use automatic subagent delegation for multi-environment incidents when the current runtime/tool policy permits spawning agents. Good delegated tasks are read-only diffs of scripts, env files, build config, deployment config, or request runtime code.
+- User preference: use automatic subagent delegation for multi-environment incidents when the current runtime/tool policy permits spawning agents. Treat any incident with one working environment and one failing environment, or separate script/env/build/request/deploy surfaces, as delegation-worthy.
+- Good delegated tasks are read-only diffs of scripts, env files, build config, deployment config, or request runtime code.
 - Do not let delegated findings remain as disconnected lists; the main agent must reduce them to the smallest concrete mismatch that explains the symptom.
 - Mutating config should stay under the main agent unless the write scope is narrow and explicitly assigned.
 

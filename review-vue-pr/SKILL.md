@@ -39,7 +39,8 @@ Keep the feedback direct, evidence-based, and actionable.
 ## Agentic Review Strategy
 
 - The main agent owns the final review judgment, severity ordering, and wording.
-- User preference: automatically use one or more subagents for substantial PR reviews when the current runtime/tool policy permits it, especially for independent review surfaces such as reactivity, async flow, API contracts, or type design.
+- User preference: automatically use one or more subagents for medium-or-larger PR reviews when the current runtime/tool policy permits it, especially for independent review surfaces such as reactivity, async flow, API contracts, type design, performance, or missing tests.
+- Treat multi-file diffs, cross-component state, API changes, or risky async behavior as enough reason to delegate.
 - Ask delegated reviewers for evidence-backed findings with file and line references, not broad advice.
 - Merge duplicate findings, discard unsupported claims, and keep the final review focused on behavior risk, data correctness, maintainability, and missing tests.
 - Do not let parallel review turn style preferences into high-severity issues.

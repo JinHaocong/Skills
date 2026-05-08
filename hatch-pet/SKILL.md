@@ -208,7 +208,7 @@ Deterministic validation is necessary but not sufficient. Before calling the pet
 
 ## Agentic Row Generation
 
-After the base job has been recorded and `references/canonical-base.png` exists, automatically prefer subagents for row-strip visual generation when the current runtime/tool policy permits delegation. This skill records the user's default preference for automatic subagent use, so do not wait for another subagent request when delegation is safe. Before row generation, state whether subagents are being used and which row jobs are being delegated. If the user directly requested subagents but they cannot be spawned because the current environment or tool policy blocks them, stop before row-strip generation, explain the blocker, and ask for explicit direction before continuing sequentially.
+After the base job has been recorded and `references/canonical-base.png` exists, automatically prefer subagents for row-strip visual generation when the current runtime/tool policy permits delegation. This skill records the user's default preference for automatic subagent use, so treat any non-derived row-strip generation after the base as delegation-worthy and do not wait for the run to become large. Before row generation, state whether subagents are being used and which row jobs are being delegated. If the user directly requested subagents but they cannot be spawned because the current environment or tool policy blocks them, stop before row-strip generation, explain the blocker, and ask for explicit direction before continuing sequentially.
 
 The parent agent must own the manifest and package writes.
 

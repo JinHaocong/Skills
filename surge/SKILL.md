@@ -28,7 +28,7 @@ After changes, re-run the relevant read commands to verify effects.
 ## Agentic Operation Strategy
 
 - The main agent owns all Surge mutations, rollback reasoning, and final verification.
-- User preference: use automatic subagent delegation for complex Surge investigations when the current runtime/tool policy permits spawning agents, and prefer read-only diagnostics such as command discovery, dump comparison, or log interpretation.
+- User preference: use automatic subagent delegation for medium-or-larger Surge investigations when the current runtime/tool policy permits spawning agents. Treat separate command discovery, environment dump, policy dump, profile dump, watch/test output, or log interpretation surfaces as delegation-worthy, and prefer read-only diagnostics.
 - Do not allow delegated agents to run `set`, profile mutation, or remote changes unless the user explicitly assigned that write scope.
 - Before any mutation, keep the baseline environment, policy, and profile outputs available for comparison.
 - After mutation, verify the exact changed key path and report the before/after effect.

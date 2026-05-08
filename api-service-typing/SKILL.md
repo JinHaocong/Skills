@@ -31,8 +31,9 @@ Generate code that matches the current repo's request wrapper and file layout.
 ## Agentic Execution
 
 - The main agent owns the final contract boundaries: request params, DTOs, response envelopes, service models, and naming.
-- For large interface sets, first split work into independent resources such as user, order, product, dictionary, upload, or pagination helpers.
-- User preference: automatically use one or more subagents for large interface sets when the current runtime/tool policy permits it, and give each subagent a non-overlapping resource or file ownership boundary.
+- For medium-or-larger interface sets, first split work into independent resources such as user, order, product, dictionary, upload, or pagination helpers.
+- User preference: automatically use one or more subagents for medium-or-larger interface work when the current runtime/tool policy permits it, and give each subagent a non-overlapping resource or file ownership boundary.
+- Treat multiple resources, multiple response envelopes, pagination plus detail types, or a need to inspect repo request conventions as enough reason to delegate.
 - Good delegated tasks include extracting backend samples, checking existing request wrapper conventions, or drafting types for one resource group.
 - The main agent must reconcile envelope helpers, shared pagination types, error handling, and field mappings before finalizing code.
 

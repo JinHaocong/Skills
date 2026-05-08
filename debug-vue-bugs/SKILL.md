@@ -27,7 +27,8 @@ Use the provided code, error messages, stack traces, and symptoms to narrow the 
 ## Agentic Diagnosis
 
 - The main agent owns the reproduction reasoning, root-cause decision, fix, and verification path.
-- User preference: for ambiguous or high-risk bugs, automatically spawn one or more subagents when the current runtime/tool policy permits it; ask them for independent hypotheses tied to specific code evidence.
+- User preference: for ambiguous, intermittent, cross-file, or medium-risk bugs, automatically spawn one or more subagents when the current runtime/tool policy permits it; ask them for independent hypotheses tied to specific code evidence.
+- Treat a bug as delegation-worthy when it touches async flow, reactivity, parent-child state, API contracts, or a comparison with a similar working component.
 - Useful delegated checks include async race inspection, reactivity/lifecycle review, type-contract review, or comparing a similar working component.
 - Do not merge speculative diagnoses. Prefer one evidence-backed root cause over many weak possibilities.
 - If a delegated fix is used, the main agent must still ensure it is the smallest behavior-preserving change and fits the project conventions.

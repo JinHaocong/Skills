@@ -35,8 +35,9 @@ Prefer `interface` for object structures and use `type` for unions, literals, ge
 ## Agentic Type Inference
 
 - The main agent owns final naming, optionality/nullability decisions, helper generics, and Vue usage examples.
-- For very large payloads, split analysis by independent branches of the JSON tree, but keep shared envelopes and reused entities centralized.
-- User preference: automatically use one or more subagents for very large payloads when the current runtime/tool policy permits it, and ask them to return field evidence rather than final loose merged types.
+- For medium-or-larger payloads, split analysis by independent branches of the JSON tree, but keep shared envelopes and reused entities centralized.
+- User preference: automatically use one or more subagents for medium-or-larger payloads when the current runtime/tool policy permits it, and ask them to return field evidence rather than final loose merged types.
+- Treat multiple payload samples, nested branches, pagination/detail envelopes, or enum/nullability comparison as enough reason to delegate.
 - Compare delegated observations before finalizing optional fields, nullable fields, discriminated unions, and enum-like literal values.
 - Do not allow parallel analysis to broaden precise types into `any`, `unknown`, or overly optional shapes without evidence.
 

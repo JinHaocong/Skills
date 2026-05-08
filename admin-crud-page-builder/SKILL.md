@@ -32,7 +32,8 @@ Prefer practical structure over over-generic scaffolding.
 
 - The main agent owns the CRUD contract, file mapping, final integration, and verification.
 - For multi-file pages, first build a short implementation plan that separates API/types, page state, table, form, routing, and permissions.
-- User preference: use automatic subagent delegation for non-trivial multi-file CRUD work when the current runtime/tool policy permits spawning agents. Delegate bounded side tasks such as pattern discovery, API/type drafting, or an isolated child component with a clear write scope.
+- User preference: use automatic subagent delegation for medium-or-larger CRUD work when the current runtime/tool policy permits spawning agents. Treat any CRUD task that spans two or more independent surfaces, such as page, API/types, form, table, route, permission, or validation, as delegation-worthy.
+- Delegate bounded side tasks such as pattern discovery, API/type drafting, or an isolated child component with a clear write scope.
 - Do not let two agents edit the same page, route, service, or type file in parallel. The main agent reviews and integrates every delegated result.
 - Keep the critical path local: if the next step depends on a decision, the main agent should make it instead of waiting on delegation.
 
