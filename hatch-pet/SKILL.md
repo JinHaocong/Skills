@@ -208,7 +208,7 @@ Deterministic validation is necessary but not sufficient. Before calling the pet
 
 ## Agentic Row Generation
 
-After the base job has been recorded and `references/canonical-base.png` exists, prefer subagents for row-strip visual generation when the user explicitly asks for subagents or the current runtime policy allows delegation. Before row generation, state whether subagents are being used and which row jobs are being delegated. If the user requested subagents but they cannot be spawned because the current environment or tool policy blocks them, stop before row-strip generation, explain the blocker, and ask for explicit direction before continuing sequentially.
+After the base job has been recorded and `references/canonical-base.png` exists, automatically prefer subagents for row-strip visual generation when the current runtime/tool policy permits delegation. This skill records the user's default preference for automatic subagent use, so do not wait for another subagent request when delegation is safe. Before row generation, state whether subagents are being used and which row jobs are being delegated. If the user directly requested subagents but they cannot be spawned because the current environment or tool policy blocks them, stop before row-strip generation, explain the blocker, and ask for explicit direction before continuing sequentially.
 
 The parent agent must own the manifest and package writes.
 
@@ -262,7 +262,7 @@ selected_source=/absolute/path/to/$CODEX_HOME/generated_images/.../ig_*.png
 qa_note=<one sentence>
 ```
 
-No silent fallback when delegation was requested: if the user asked for subagents and they cannot be used for row-strip visual generation, stop and ask for explicit user direction before continuing without them. If subagents were not requested and runtime policy does not allow delegation, continue sequentially and mention that in the final answer. The final answer must report which row jobs were delegated to subagents, which ran sequentially, and which, if any, were mirrored or repaired by the parent.
+No silent fallback when delegation was directly requested: if the user asked for subagents in the current task and they cannot be used for row-strip visual generation, stop and ask for explicit user direction before continuing without them. If only the default automatic-delegation preference applies and runtime policy does not allow delegation, continue sequentially and mention that in the final answer. The final answer must report which row jobs were delegated to subagents, which ran sequentially, and which, if any, were mirrored or repaired by the parent.
 
 ## Repair Workflow
 
@@ -299,7 +299,7 @@ The secondary fallback requires `OPENAI_API_KEY`.
 - Keep `$imagegen` as the primary generation layer.
 - Keep reference images attached/visible for `$imagegen` whenever the chosen path supports references.
 - Attach the row's `references/layout-guides/<state>.png` image to every row-strip job as a layout-only guide, and do not accept outputs that copy guide pixels.
-- Prefer subagents for row-strip visual generation after the parent records the base image when the user explicitly asks for subagents or the runtime policy allows it. The parent may generate the base, and the parent keeps all manifest and package writes.
+- Automatically prefer subagents for row-strip visual generation after the parent records the base image when the runtime/tool policy allows it. The parent may generate the base, and the parent keeps all manifest and package writes.
 - Generate every normal visual job with `$imagegen`: base plus all row strips that are not explicitly approved `running-left` mirror derivations.
 - Treat only the base job as eligible for prompt-only generation; every row job must attach its listed grounding images.
 - Generate or delegate `running-right` first, then mirror `running-left` only when visual inspection confirms a mirror preserves identity and semantics; otherwise generate or delegate `running-left` as a normal grounded `$imagegen` row.

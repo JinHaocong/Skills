@@ -29,7 +29,7 @@ Keep the analysis structured, compact, and high in information density.
 ## Agentic Analysis
 
 - Treat the main agent as the synthesis owner: it should decide the code's responsibility, execution path, and final explanation.
-- When the user explicitly asks for multiple agents or parallel analysis, split by independent files, modules, or call chains; do not split one tightly coupled function into disconnected guesses.
+- User preference: automatically use one or more subagents for large analysis tasks when the current runtime/tool policy permits it. Split by independent files, modules, or call chains; do not split one tightly coupled function into disconnected guesses.
 - Ask delegated agents for evidence-based observations only: entry points, state changes, dependencies, risks, and exact file references.
 - Merge delegated observations into one coherent explanation and remove duplicate or unsupported claims.
 - Clearly label assumptions when the available code is partial or when behavior is inferred from naming and imports.

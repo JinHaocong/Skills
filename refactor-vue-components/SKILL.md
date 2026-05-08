@@ -35,7 +35,7 @@ Use Pinia only when state is genuinely shared, long-lived, or cross-page.
 
 - The main agent owns behavior preservation, target structure, file boundaries, and final integration.
 - Before editing, separate responsibilities into UI component, composable state, service/API, types, constants, and tests or verification.
-- Use subagents only when the user or runtime policy explicitly allows it. Assign disjoint write scopes such as service/types, one composable, or one child component.
+- User preference: use automatic subagent delegation for substantial refactors when the current runtime/tool policy permits spawning agents. Assign disjoint write scopes such as service/types, one composable, or one child component.
 - Do not split tightly coupled form state or request orchestration across agents unless the boundary is already clear.
 - After delegated edits return, the main agent must check imports, Composition API data flow, emits/props contracts, and whether the refactor changed behavior unintentionally.
 

@@ -32,7 +32,7 @@ Generate code that matches the current repo's request wrapper and file layout.
 
 - The main agent owns the final contract boundaries: request params, DTOs, response envelopes, service models, and naming.
 - For large interface sets, first split work into independent resources such as user, order, product, dictionary, upload, or pagination helpers.
-- Use subagents only when the user or runtime policy explicitly allows it, and give each subagent a non-overlapping resource or file ownership boundary.
+- User preference: automatically use one or more subagents for large interface sets when the current runtime/tool policy permits it, and give each subagent a non-overlapping resource or file ownership boundary.
 - Good delegated tasks include extracting backend samples, checking existing request wrapper conventions, or drafting types for one resource group.
 - The main agent must reconcile envelope helpers, shared pagination types, error handling, and field mappings before finalizing code.
 

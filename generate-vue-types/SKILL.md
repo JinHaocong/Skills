@@ -36,7 +36,7 @@ Prefer `interface` for object structures and use `type` for unions, literals, ge
 
 - The main agent owns final naming, optionality/nullability decisions, helper generics, and Vue usage examples.
 - For very large payloads, split analysis by independent branches of the JSON tree, but keep shared envelopes and reused entities centralized.
-- Use subagents only when the user or runtime policy explicitly allows it, and ask them to return field evidence rather than final loose merged types.
+- User preference: automatically use one or more subagents for very large payloads when the current runtime/tool policy permits it, and ask them to return field evidence rather than final loose merged types.
 - Compare delegated observations before finalizing optional fields, nullable fields, discriminated unions, and enum-like literal values.
 - Do not allow parallel analysis to broaden precise types into `any`, `unknown`, or overly optional shapes without evidence.
 
